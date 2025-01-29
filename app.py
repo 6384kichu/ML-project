@@ -20,8 +20,6 @@ longitude = st.number_input("Longitude")
 
 
 
-
-
 #connecting data frame to front end
 user_data=pd.DataFrame({'MedInc': med_inc,
                        'HouseAge': houseage,
@@ -40,3 +38,5 @@ prediction = model.predict(user_data)
 
 if st.button('Submit'):
     st.write("predicted values is",prediction)
+
+
